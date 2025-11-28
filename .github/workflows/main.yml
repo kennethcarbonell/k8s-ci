@@ -32,6 +32,6 @@ jobs:
 
     - name: Notify webhook
       run: |
-        curl -X POST https://damon-unreiterating-unspatially.ngrok-free.dev:9000/webhook \
+        curl -X POST https://damon-unreiterating-unspatially.ngrok-free.dev/webhook \
         -H 'Content-Type: application/json' \
         -d "{\"sha\": \"${{ steps.vars.outputs.sha }}\"}"
