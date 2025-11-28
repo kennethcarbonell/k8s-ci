@@ -1,7 +1,9 @@
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 
 app = FastAPI()
 
 @app.get("/")
 def home():
-	return "<h1> Hello World!!!<h1/>"
+    html_content = "<h1>Hello World!!!</h1>"
+    return HTMLResponse(content=html_content, status_code=200)
