@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+    - name: Update FastAPI Deployment image
+      command: >
+        kubectl set image deployment/fastapi-deployment fastapi=megafood/fastapi-hello:{{ sha }}
+
+    - name: Wait for rollout
+      command: kubectl rollout status deployment/fastapi-deployment
