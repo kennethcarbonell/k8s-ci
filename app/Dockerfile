@@ -16,7 +16,7 @@ WORKDIR /app
 RUN pip install --no-cache-dir fastapi uvicorn
 
 # Copy the app
-COPY app.py .
+COPY app.py/ ./
 
 # Expose FastAPI default port
 EXPOSE 8000
