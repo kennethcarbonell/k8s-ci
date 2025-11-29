@@ -5,5 +5,5 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    html_content = "<h1>Hello World!!!</h1>"
+    html_content = "<h1>GBA 6270 final project!!!!</h1>"
     return HTMLResponse(content=html_content, status_code=200)
