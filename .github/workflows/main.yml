@@ -28,7 +28,7 @@ jobs:
     # Build image on Docker
     - name: Build image
       run: |
-        docker build -t megafood/fastapi-hello:${{ steps.vars.outputs.sha }} .
+        docker build -t megafood/fastapi-hello:${{ steps.vars.outputs.sha }} -f app/Dockerfile .
 
     # Push image to Docker
     - name: Push image
