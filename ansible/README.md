@@ -1,0 +1,1 @@
+After being triggered by webhook_listener.py. Ansible playbook runs this file targeting the kubernetes cluster
