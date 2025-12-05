@@ -38,6 +38,6 @@ jobs:
     # Notify the webhook server to proceed to run ansible playbooks
     - name: Notify webhook
       run: |
-        curl -X POST https://damon-unreiterating-unspatially.ngrok-free.dev/webhook \
+        curl -X POST https://thresa-pseudoangelic-lively.ngrok-free.dev/webhook \
         -H 'Content-Type: application/json' \
         -d "{\"sha\": \"${{ steps.vars.outputs.sha }}\"}"
